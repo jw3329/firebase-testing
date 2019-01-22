@@ -9,12 +9,26 @@
 </head>
 
 <body>
-    <a href="/sign/signin.html">Sign in</a>
-    <a href="/sign/signup.html">Sign up</a>
-    <a href="/sign/signout.html">Sign out</a>
+    <div>
+        <a href="/sign/signin.html">Sign in</a>
+        <a href="/sign/signup.html">Sign up</a>
+        <a href="/sign/signout.html">Sign out</a>
+    </div>
+
+    <div class="add-item">
+        <form id='item-form'>
+            <input type="text" id="firstname" placeholder="FirstName">
+            <input type="text" id="lastname" placeholder="LastName">
+            <input type="number" id="number" placeholder="Enter a number">
+            <input type="submit">
+        </form>
+    </div>
+
     <script src="https://www.gstatic.com/firebasejs/5.8.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/5.8.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.8.0/firebase-firestore.js"></script>
     <script src="/scripts/config.js"></script>
+    <script src="/scripts/index.js"></script>
 </body>
 
 </html>
